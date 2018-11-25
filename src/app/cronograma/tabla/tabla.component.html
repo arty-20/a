@@ -1,0 +1,7 @@
+<div>
+  <div class="texto"><label>Cronograma de actividades</label></div>
+  <div class="titulo" *ngFor="let title of titles"> {{title}} </div>
+  <div class="datos" *ngFor="let item of cronogramas">
+    <app-contenido [cronograma]="item"></app-contenido>
+  </div>
+</div> 

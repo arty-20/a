@@ -1,0 +1,38 @@
+/* .a1{
+	text-align: left;
+	padding: 0px 30px 0px 30px; 
+}
+.a2{
+	text-align: right;
+}
+.a3{
+	text-align: center;
+}
+
+.boton{
+	background-color: #4699F6;
+	border-radius: 10px;
+	text-transform: uppercase;
+	border-color: darkblue;
+	color: blue; 
+}
+.boton:hover{
+	color: whitesmoke;
+	background-color: #061289;
+}
+div{
+	background-color: #66BBFA;
+	border: solid darkblue;
+	display: inline-block;
+	padding: 10px 12px;
+	margin: 35px 400px;
+}
+
+input, option, select{
+	background-color: #199AF9;
+	color: #DEE2E2;
+}
+
+label{
+	color: #061289;
+} */

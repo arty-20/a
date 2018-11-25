@@ -1,0 +1,7 @@
+<div>
+    <div class="texto"><label>Lista de categorias</label></div>
+    <div class="titulo" *ngFor="let title of titles"> {{title}} </div>
+    <div class="datos" *ngFor="let item of categorias">
+      <app-contenido-categoria [categoria]="item"></app-contenido-categoria>
+    </div>
+  </div> 

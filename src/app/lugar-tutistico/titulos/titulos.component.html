@@ -1,0 +1,7 @@
+<div class="lugar">
+  <div class="texto"><label>Lugares Turisticos</label></div>
+  <div class="titulos" *ngFor="let titulo of titulos">{{titulo}}</div>
+  <div class="datos" *ngFor="let lugar of lugares">
+    <app-datos [lugar]="lugar"></app-datos><br>
+  </div>
+</div>

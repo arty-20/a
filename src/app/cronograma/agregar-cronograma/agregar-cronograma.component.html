@@ -1,0 +1,26 @@
+
+<div>
+  <table>
+    <tr>
+      <td class="a1"> <label>Nombre de la actividad: </label></td>
+      <td class="a2"><input type="text" name="cronActual.nombreCro" [(ngModel)]="cronActual.nombreCro"></td>
+    </tr>
+    <tr>
+      <td class="a1"><label>Hora: </label></td>
+      <td class="a2"><input type="time" name="cronActual.horaCro" [(ngModel)]="cronActual.horaCro"></td>  
+    </tr>
+    <tr>
+      <td class="a1"><label>Fecha: </label></td>
+      <td class="a2"><input type="date"  name="cronActual.fechaCro"  [(ngModel)]="cronActual.fechaCro"></td>
+    </tr>
+    <tr>
+      <td class="a1"><label>Detalle: </label></td> 
+      <td class="a2"><input type="text" name="cronActual.descripcionCro" [(ngModel)]="cronActual.descripcionCro"></td>  
+    </tr>
+    <tr class="a3" >
+      <td colspan="2"> 
+        <button (click)="agregarCronograma(cronActual)" >Crear</button>
+      </td> 
+    </tr>
+  </table> 
+</div> 

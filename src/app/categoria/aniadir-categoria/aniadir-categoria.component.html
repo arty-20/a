@@ -1,0 +1,17 @@
+<div>
+    <table>
+      <tr>
+        <td class="a1"> <label>Nombre de la categoria: </label></td>
+        <td class="a2"><input type="text" name="categoriaActual.nombreCat" [(ngModel)]="categoriaActual.nombreCat"></td>
+      </tr>
+      <tr>
+        <td class="a1"><label>Descripcion: </label></td>
+        <td class="a2"><input type="text" min="03-11-2018" name="categoriaActual.descripcionCat" [(ngModel)]="categoriaActual.descripcionCat"></td>  
+      </tr>
+      <tr class="a3" >
+        <td colspan="2"> 
+          <button (click)="agregarCategoria(categoriaActual)" >Crear</button>
+        </td> 
+      </tr>
+    </table> 
+  </div> 

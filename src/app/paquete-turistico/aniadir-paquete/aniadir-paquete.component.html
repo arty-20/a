@@ -1,0 +1,116 @@
+ <!-- <div>
+ <table>
+    <tr>
+      <td class="a1"> <label class="label">Nombre del paquete: </label></td>
+      <td class="a2"> <input type="text" name="paqueteActual.nombrePaquete" [(ngModel)]="paqueteActual.nombrePaquete"></td>
+    </tr>
+    <tr>
+      <td class="a1"><label class="label">Descripcion: </label></td>
+      <td class="a2"><input  type="text" name="paqueteActual.descripcionPaquete" [(ngModel)]="paqueteActual.descripcionPaquete"></td>  
+    </tr>
+    <tr>
+      <td class="a1"><label class="label">Costo Paquete: </label></td>
+      <td class="a2"><input  type="number" step="0.01" name="paqueteActual.costoPaquete" [(ngModel)]="paqueteActual.costoPaquete"></td>
+    </tr>
+    <tr>
+      <td class="a1"><label class="label">Estado Paquete: </label></td>
+      <td class="a2"><input  type="text" name="paqueteActual.estadoPaquete" [(ngModel)]="paqueteActual.estadoPaquete"></td>
+    </tr>
+    <tr>
+      <td class="a1"><label class="label">Cupo MÍnimo: </label></td>
+      <td class="a2"><input  type="number" name="paqueteActual.cupoMinPaquete" [(ngModel)]="paqueteActual.cupoMinPaquete"></td>
+    </tr>
+    <tr>
+      <td class="a1"><label class="label">Palabra Clave: </label></td>
+      <td class="a2"><input  type="text" name="paqueteActual.palabraClave" [(ngModel)]="paqueteActual.palabraClave"></td>
+    </tr>
+    <tr>
+      <td class="a1"><label class="label">Fecha Inicio: </label></td>
+      <td class="a2"><input  type="date" name="paqueteActual.fechaInicioPaquete" [(ngModel)]="paqueteActual.fechaInicioPaquete"></td>
+    </tr>
+    <tr>
+      <td class="a1"><label class="label">Fecha Fin: </label></td>
+      <td class="a2"><input  type="date" name="paqueteActual.fechaFinPaquete" [(ngModel)]="paqueteActual.fechaFinPaquete"></td>
+    </tr>
+    <tr>
+      <td class="a1"><label class="label">Fecha Inicio Venta: </label></td>
+      <td class="a2"><input  type="date" name="paqueteActual.fechaInicioVentaPaquete" [(ngModel)]="paqueteActual.fechaInicioVentaPaquete"></td>
+    </tr>
+    <tr>
+      <td class="a1"><label class="label">Fecha Fin Venta: </label></td>
+      <td class="a2"><input  type="date" name="paqueteActual.fechaFinVentaPaquete" [(ngModel)]="paqueteActual.fechaFinVentaPaquete"></td>
+    </tr>
+    <tr>
+      <td class="a1"><label>Categoría:</label></td>
+      <td class="a2">
+        <select name="catNombre" [(ngModel)]="paqueteActual.idCat">
+          <option value="">Selecciona una opcion</option>
+          <option *ngFor="let categoria of categorias" value="{{categoria.idCat}}">{{categoria.nombreCat}}</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td class="a1"><label>Lugar:</label></td>
+      <td class="a2">
+        <select name="paqueteActual.lugarId" [(ngModel)]="paqueteActual.idLugar">
+          <option value="">Selecciona una opcion</option>
+          <option *ngFor="let lugar of lugares" value="{{lugar.idLugar}}">{{lugar.nombreLugar}}</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td class="a1"><label>Cronograma:</label></td>
+      <td class="a2">
+        <select name="paqueteActual.cronogramaid" [(ngModel)]="paqueteActual.idCro">
+          <option value="">Selecciona una opcion</option>
+          <option *ngFor="let crono of cronogramas" value="{{crono.idCro}}">{{crono.nombreCro}}</option>  
+        </select>
+      </td>
+    </tr>
+    <tr class="a3" >
+      <td colspan="2"> 
+          <button class="boton" (click)="aniadirPaquete(paqueteActual)">Agregar</button>
+      </td> 
+    </tr>
+  </table>  
+  </div>-->
+  <div class="container">
+  <form >
+      <label class="label">Nombre del paquete: </label>
+      <input type="text" class="form-control"  name="paqueteActual.nombrePaquete" [(ngModel)]="paqueteActual.nombrePaquete" required>
+      <label class="label">Descripcion: </label>
+      <input  type="text" class="form-control" name="paqueteActual.descripcionPaquete" [(ngModel)]="paqueteActual.descripcionPaquete">
+      <label class="label">Costo Paquete: </label>
+      <input  type="number" class="form-control" required step="0.01" name="paqueteActual.costoPaquete" [(ngModel)]="paqueteActual.costoPaquete">
+      <label class="label">Estado Paquete: </label>
+      <input  type="text" class="form-control" required name="paqueteActual.estadoPaquete" [(ngModel)]="paqueteActual.estadoPaquete">
+      <label class="label">Cupo MÍnimo: </label>
+      <input  type="number" class="form-control" required name="paqueteActual.cupoMinPaquete" [(ngModel)]="paqueteActual.cupoMinPaquete">
+      <label class="label">Palabra Clave: </label>
+      <input  type="text" class="form-control" required name="paqueteActual.palabraClave" [(ngModel)]="paqueteActual.palabraClave">
+      <label class="label">Fecha Inicio: </label>
+      <input  type="date" class="form-control" required name="paqueteActual.fechaInicioPaquete" [(ngModel)]="paqueteActual.fechaInicioPaquete">
+      <label class="label">Fecha Fin: </label>
+      <input  type="date" class="form-control" required name="paqueteActual.fechaFinPaquete" [(ngModel)]="paqueteActual.fechaFinPaquete">
+      <label class="label">Fecha Inicio Venta: </label>
+      <input  type="date" class="form-control" required name="paqueteActual.fechaInicioVentaPaquete" [(ngModel)]="paqueteActual.fechaInicioVentaPaquete">
+      <label class="label">Fecha Fin Venta: </label>
+      <input  type="date" class="form-control" required name="paqueteActual.fechaFinVentaPaquete" [(ngModel)]="paqueteActual.fechaFinVentaPaquete">
+      <label>Categoría:</label>
+        <select class="form-control" name="catNombre" [(ngModel)]="paqueteActual.idCat">
+          <option value="">Selecciona una opcion</option>
+          <option *ngFor="let categoria of categorias" value="{{categoria.idCat}}">{{categoria.nombreCat}}</option>
+        </select>
+      <label>Lugar:</label>
+        <select class="form-control" name="paqueteActual.lugarId" [(ngModel)]="paqueteActual.idLugar">
+          <option value="">Selecciona una opcion</option>
+          <option *ngFor="let lugar of lugares" value="{{lugar.idLugar}}">{{lugar.nombreLugar}}</option>
+        </select>
+      <label>Cronograma:</label>
+        <select class="form-control" name="paqueteActual.cronogramaid" [(ngModel)]="paqueteActual.idCro">
+          <option value="">Selecciona una opcion</option>
+          <option *ngFor="let crono of cronogramas" value="{{crono.idCro}}">{{crono.nombreCro}}</option>  
+        </select> 
+          <button type="submit" class="boton" (click)="aniadirPaquete(paqueteActual)">Agregar</button>
+  </form>
+</div>

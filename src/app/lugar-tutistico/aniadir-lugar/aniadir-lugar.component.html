@@ -1,0 +1,22 @@
+<div>
+  <table>
+    <tr>
+      <td class="a1"> <label class="label">Nombre del lugar: </label></td>
+      <td class="a2"> <input type="text" name="lugarActual.nombreLugar" [(ngModel)]="lugarActual.nombreLugar" ng-model.name></td>
+    </tr>
+    <tr>
+      <td class="a1"><label class="label">Descripcion: </label></td>
+      <td class="a2"><input  type="text" name="lugarActual.descripcionLugar" [(ngModel)]="lugarActual.descripcionLugar"></td>  
+    </tr>
+    <tr>
+      <td class="a1"><label class="label">Ubicacion: </label></td>
+      <td class="a2"><input  type="text" name="lugarActual.ubicacionLugar" [(ngModel)]="lugarActual.ubicacionLugar" required="true"></td>
+    </tr>
+    <tr class="a3" >
+      <td colspan="2"> 
+          <button (click)="aniadirLugar(lugarActual)">Agregar</button>
+      </td> 
+    </tr>
+  </table> 
+</div> 
+  

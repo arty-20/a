@@ -1,0 +1,10 @@
+.nom, .det {
+    float: left;
+    width: calc(100%/2);
+    padding: 15px 10px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    
+    display: table-cell;
+    background:rgb(155, 172, 172);
+  }

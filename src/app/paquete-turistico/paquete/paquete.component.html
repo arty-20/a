@@ -1,0 +1,42 @@
+<hr>
+<div>
+  <div class="b1" *ngFor="let item of paquetes">
+    <label >{{titulos[0]}}:</label> {{item.nombrePaquete}}
+    <br>
+    <label >{{titulos[1]}}:</label> {{item.descripcionPaquete}}
+    <br>
+    <label >{{titulos[2]}}:</label> {{item.costoPaquete}}$
+    <br>
+    <label >{{titulos[3]}}:</label> {{item.estadoPaquete}}
+    <br>
+    <label >{{titulos[4]}}:</label> {{item.cupoMinPaquete}}
+    <br>
+    <label >{{titulos[5]}}:</label> {{item.palabraClave}}
+    <br>
+    <label >{{titulos[6]}}:</label> {{item.fechaInicioPaquete}}
+    <br>
+    <label >{{titulos[7]}}:</label> {{item.fechaFinPaquete}}
+    <br>
+    <label >{{titulos[8]}}:</label> {{item.fechaInicioVentaPaquete}}
+    <br>
+    <label >{{titulos[9]}}:</label> {{item.fechaFinVentaPaquete}}
+    <br>
+    <div *ngFor="let cat of categorias">
+      <div *ngIf="item.idCat === cat.idCat">
+          <label >{{titulos[10]}}:</label> {{cat.nombreCat}}
+      </div>
+    </div>
+    <div *ngFor="let lug of lugares">
+      <div *ngIf="item.idLugar === lug.idLugar">
+          <label >{{titulos[11]}}:</label> {{lug.nombreLugar}}
+      </div>
+    </div>
+    
+    <div *ngFor="let cro of cronogramas">
+      <div *ngIf="item.idCro === cro.idCro">
+          <label >{{titulos[12]}}:</label> {{cro.nombreCro}}
+      </div>
+    </div>
+    
+  </div>
+</div>

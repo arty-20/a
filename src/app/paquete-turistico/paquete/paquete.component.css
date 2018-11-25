@@ -1,0 +1,16 @@
+.b1{
+    margin: 10px 380px 10px 380px;
+    font-size: 18px;
+    font-style: italic;
+    color: #0512AF;
+    border: 1px solid;
+    background-color: #8AA9FC;
+    
+}
+
+label{
+    color: #7424CA;
+    font-style: italic;
+    width: 40%;
+    margin: 0px 0px 0px 65px;
+}

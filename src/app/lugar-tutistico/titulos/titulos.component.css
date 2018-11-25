@@ -1,0 +1,24 @@
+.titulos {
+    float: left;
+    width: calc(100%/3);
+    padding: 15px 10px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+  }
+  
+  .titulos {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    background: tan;
+  }
+  .texto{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    float: left;
+    width: 100%;
+    padding: 5px 0px;
+    box-sizing: border-box;
+    border: 2px solid gray;
+  }
